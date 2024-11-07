@@ -12,7 +12,7 @@ public class student extends person {
     }
 
     // getters and setters 
-    public String getIdNum(); {
+    public String getIdNum() {
         return myIdNum;
     }
 
