@@ -36,7 +36,7 @@ public class person {
     // toString method displays 
     // need to show the name, age and gender 
     public String toString(){
-        return "\n" + "Name:" + myName + "\nAge" + myAge + "\nGender: " + myGender;
+        return "\n" + "Name: " + myName + "\nAge: " + myAge + "\nGender: " + myGender;
     }
     
 }
