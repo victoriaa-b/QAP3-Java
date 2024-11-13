@@ -1,23 +1,23 @@
 package Question2;
 
-public class movablePoint extends point {
+public class moveablePoint extends point {
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
 
     // constructors
-    public movablePoint(float x, float y, float xSpeed, float ySpeed) {
+    public moveablePoint(float x, float y, float xSpeed, float ySpeed) {
         super(x, y); // take parent 
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
 
-    public movablePoint(float xSpeed, float ySpeed) {
+    public moveablePoint(float xSpeed, float ySpeed) {
         super(0.0f, 0.0f); 
         this.xSpeed = xSpeed;
         this.ySpeed = ySpeed;
     }
 
-    public movablePoint() {
+    public moveablePoint() {
         super(0.0f, 0.0f);
     }
 
@@ -50,11 +50,11 @@ public class movablePoint extends point {
     // toString to display the x and y coordinates of the point and speed
     @Override
     public String toString() {
-        return String.format("%s, Speed: (xSpeed=%.1f, ySpeed=%.1f)", super.toString(), xSpeed, ySpeed);
+        return String.format("%s, Speed: (xSpeed= %.1f, ySpeed= %.1f)", super.toString(), xSpeed, ySpeed);
     }
 
     // needed in order to update position
-    public movablePoint move() {
+    public moveablePoint move() {
         setX(getX() + xSpeed);
         setY(getY() + ySpeed);
         return this;
