@@ -27,4 +27,12 @@ public class triangle extends shape {
     public double getPerimeter() {
         return side1 + side2 + side3;
     }
+
+    // scale the triangle
+    @Override
+    public void scale(double factor) {
+        this.side1 *= factor;
+        this.side2 *= factor;
+        this.side3 *= factor;
+    }
 }

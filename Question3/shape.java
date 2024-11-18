@@ -1,6 +1,7 @@
 package Question3;
 
-abstract class shape {
+import Question4.scalable; // need to bring in the scalablity
+public abstract class shape implements scalable {
     protected String name;
 
       // construtor

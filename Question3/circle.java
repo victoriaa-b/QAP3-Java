@@ -20,4 +20,9 @@ public class circle extends shape {
     public double getArea() {
         return Math.PI * radius * radius;
     }
+
+    // scale for the radius 
+    public void scale(double factor) {
+        this.radius *= factor;
+    }
 }

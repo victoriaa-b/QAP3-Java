@@ -22,4 +22,11 @@ public class ellipse extends shape {
     public double getPerimeter() {
         return Math.PI * (3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)));
     }
+
+    // scale the ellipse
+    @Override
+    public void scale(double factor) {
+        this.a *= factor;
+        this.b *= factor;
+    }
 }
